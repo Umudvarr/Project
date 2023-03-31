@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merge Sort</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><ol>
+<li>
+<p>İlk olarak, listenin ortasından bölerek iki yarıya ayırıyoruz ve bu işlemi tekrarlayarak tek elemanlı listeler elde edene kadar devam ediyoruz.</p>
+<p>[14, 5, 22, 7, 11, 18] -&gt; [14, 5, 22], [7, 11, 18]</p>
+</li>
+<li>
+<p>Şimdi, her iki yarıyı da ayrı ayrı sıralayacağız. Bunun için yine aynı işlemi tekrarlayarak tek elemanlı listeler oluşturana kadar listeyi bölüyoruz.</p>
+<p>[14, 5, 22] -&gt; [14], [5, 22] [7, 11, 18] -&gt; [7], [11, 18]</p>
+</li>
+<li>
+<p>Şimdi, sıralı iki küçük listeyi birleştiriyoruz. Burada, her iki listenin ilk elemanından başlayarak, küçük olanı birleştirilmiş listeye ekliyoruz. Bu işlemi her seferinde bir sonraki elemanları karşılaştırarak yapmaya devam ediyoruz.</p>
+<p>[14], [5, 22] -&gt; [5, 14, 22] [7], [11, 18] -&gt; [7, 11, 18]</p>
+</li>
+<li>
+<p>Son olarak, iki birleştirilmiş listeyi birleştiriyoruz.</p>
+<p>[5, 14, 22], [7, 11, 18] -&gt; [5, 7, 11, 14, 18, 22]</p>
+</li>
+</ol>
+<p>Böylece, [14, 5, 22, 7, 11, 18] girdi listesi, Merge Sort algoritmasını kullanarak sıralanmış bir liste olan [5, 7, 11, 14, 18, 22] elde edilmiştir.</p>
+</div>
+</body>
+
+</html>
