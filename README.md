@@ -1,2 +1,0 @@
-# Project
-Selection Sort Projesi
